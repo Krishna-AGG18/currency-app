@@ -26,6 +26,7 @@ dropdowns.forEach((elem) => {
         let newsrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
         let img = elem.target.parentElement.querySelector("img");
         img.src = newsrc;
+        updateRate();
     })
 })
 
