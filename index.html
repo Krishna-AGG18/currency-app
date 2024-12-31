@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Exchange</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -20,44 +22,35 @@
     </nav>
     <div class="container">
         <div class="content">
-            <fieldset>
-                <legend>
-                    Exchange Currency Rates
-                </legend>
-                <div class="item1">
-                    <label for="amount">Enter Amount</label>  <br>
-                    <input type="text" id="amount">
+            <h3>Currency Converter</h3>
+            <form action="">
+                <div class="amount">
+                    <label for="amt">Enter Amount : </label> <br>
+                    <input type="text" id="amt" value="1">
                 </div>
-                <div class="item2">
-                    <div>
-                        From : 
-                        <select name="from" id="from">
-                            <option value="hello">
-                                <img src="https://flagsapi.com/IN/flat/64.png" alt="india" width="25px">
-                                IND
-                            </option>
-                            <option value="hello">hello</option>
-                            <option value="hello">hello</option>
-                            <option value="hello">hello</option>
-                        </select>
+                <div class="dropdown">
+                    <div class="from">
+                        <h3>From : </h3>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/US/flat/64.png" />
+                            <select name="from"></select>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-arrow-right-arrow-left" style="color: #ffffff;"></i>
-                    </div>
-                    <div>
-                        To : 
-                        <select name="to" id="to">
-                            <option value="hello">hello</option>
-                        </select>
+                    <div class="to">
+                        <h3>To : </h3>
+                        <div class="select-container">
+                            <img src="https://flagsapi.com/IN/flat/64.png" />
+                            <select name="to"></select>
+                        </div>
                     </div>
                 </div>
-                <div class="item3">
-                    <input type="text" placeholder="Rate">
+                <div class="msg">
+                    1 USD = 85.48 INR
                 </div>
-                <div class="btns">
-                    <button id="getrate">Convert !! </button>
+                <div class="btn">
+                    <button id="getrate">Get Exchange Rate</button>
                 </div>
-            </fieldset>
+            </form>
         </div>
     </div>
     <script src="codes.js"></script>
